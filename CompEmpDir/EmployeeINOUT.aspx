@@ -37,5 +37,5 @@
        
     </div><div class="col-md-4 btn-toolbar " style="margin:15px 0px">
         <asp:LinkButton class="btn btn-success pull-right " id="calhrs" type="submit" Text="Enter"  runat="server" OnClick="calhrs_OnClick" />
-    </div><span class="text-info" runat="server" clientidmode="AutoID" id="hrs"></span>
+    </div><span class="text-info" runat="server" clientidmode="AutoID" id="hrs"></span> Hrs
 </asp:Content>

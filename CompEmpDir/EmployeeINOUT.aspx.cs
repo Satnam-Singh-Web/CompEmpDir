@@ -107,12 +107,11 @@ namespace CompEmpDir
             if (timeIn.Count == timeOut.Count)
             {
                 var count = 1;
-                for (int i = 1; i <= timeIn.Count; i++)
+                for (int i = 0; i < timeIn.Count; i++)
                 {
-                    string date = timeIn[1].ToString();
-                    string date2 = timeOut[1].ToString();
-                    hours += DateTime.Parse(timeIn[i].ToString()) -
-                            DateTime.Parse(timeOut[i].ToString());
+                    var a = i;
+                    hours += timeOut[i] - timeIn[i];
+                    //hours += DateTime.Parse(timeIn[i]) -DateTime.Parse(timeOut[i]);
                 }
 
                 hrs.InnerText = hours.ToString();
